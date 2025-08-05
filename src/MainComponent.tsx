@@ -5,19 +5,27 @@ const MainComponent: React.FC = () => {
   return (
     <div className="price-container-main">
       <div className="header">
-        {/* <h1 className="headline-title">HEADLINE</h1>
-        <h2 className="studio-academy">STUDIO ACADEMY</h2>
+        <div className="logo-container">
+          <div className="headline-logo">
+            <div className="headline-image"></div>
+          </div>
+          <div className="x-symbol">×</div>
+          <div className="untold-logo">
+            <div className="untold-image"></div>
+          </div>
+        </div>
+        <h2 className="studio-academy">HEADLINE STUDIO ACADEMY</h2>
 
-        */}
         <div className="event-badge">
           <div className="badge-content">UNTOLD X 2025 • Cluj-Napoca</div>
+          <div className="badge-glow"></div>
         </div>
-        <div className="main-description">
+        {/* <div className="main-description">
           Transformă-ți părul în opera de artă pentru Untold X. Coafuri
           spectaculoase
           <br />
           care rezistă toată noaptea și te fac să strălucești în mulțime.
-        </div>
+        </div> */}
       </div>
 
       <div className="pricing-grid">
@@ -32,11 +40,9 @@ const MainComponent: React.FC = () => {
 
           <div className="service-item">
             <div className="service-info">
-              <div className="service-name">
-                Braids & styling
-              </div>
+              <div className="service-name">Braids & Styling</div>
               <div className="service-description">
-                Styling complet + accesori "antifuz" je
+                Împletituri/coafat simplu - pe păr natural
               </div>
               {/* <div className="service-duration">
                 <div className="duration-icon"></div>
@@ -51,9 +57,9 @@ const MainComponent: React.FC = () => {
 
           <div className="service-item">
             <div className="service-info">
-              <div className="service-name">Braids-styling & accesories</div>
+              <div className="service-name">Braids & Styling & Accessories</div>
               <div className="service-description">
-                Stilizare icondoană pentru grupuri
+                Împletituri/coafat cu accesorii de păr, sclipici, spray colorat.
               </div>
               {/* <div className="service-duration">
                 <div className="duration-icon"></div>
@@ -68,9 +74,9 @@ const MainComponent: React.FC = () => {
 
           <div className="service-item">
             <div className="service-info">
-              <div className="service-name">Extensions braids</div>
+              <div className="service-name">Extensions Braids</div>
               <div className="service-description">
-                Rezultate rapida pentru after party
+                Împletituri/look-uri cu extensii colorate
               </div>
               {/* <div className="service-duration">
                 <div className="duration-icon"></div>
@@ -85,9 +91,10 @@ const MainComponent: React.FC = () => {
 
           <div className="service-item">
             <div className="service-info">
-              <div className="service-name">Full festival look</div>
+              <div className="service-name">Full Festival Look</div>
               <div className="service-description">
-                Styling pentru zodinte folia
+                Pachet complet cu extensii colorate, accesorii, etc pentru cel
+                mai tare look din festival
               </div>
               {/* <div className="service-duration">
                 <div className="duration-icon"></div>
@@ -107,68 +114,53 @@ const MainComponent: React.FC = () => {
         <div className="stylists-grid">
           <div className="stylist-card">
             <a
-              href="https://www.instagram.com/untold.hairstylist1"
+              href="https://www.instagram.com/headline.studioacademy?igsh=aHdodGY2ZW9vZmpp"
               target="_blank"
-              rel="noopener noreferrer"
+                          rel="noopener noreferrer"
+                          className="stylist-link"
             >
-              <div className="stylist-image-container">
-                <div className="stylist-image stylist-1"></div>
-                <div className="instagram-icon"></div>
-              </div>
+              <div className="instagram-icon"></div>
               <div className="stylist-info">
-                <h3>Alex Neon</h3>
-                <p>Color Specialist</p>
+                <h3>@headline.studioacademy</h3>
               </div>
             </a>
           </div>
 
           <div className="stylist-card">
             <a
-              href="https://www.instagram.com/untold.hairstylist2"
+              href="https://www.instagram.com/iuliagujba/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="stylist-image-container">
-                <div className="stylist-image stylist-2"></div>
-                <div className="instagram-icon"></div>
-              </div>
+              <div className="instagram-icon"></div>
               <div className="stylist-info">
-                <h3>Maria Waves</h3>
-                <p>Braids & Extensions</p>
+                <h3>@iuliagujba</h3>
               </div>
             </a>
           </div>
 
           <div className="stylist-card">
             <a
-              href="https://www.instagram.com/untold.hairstylist3"
+              href="https://www.instagram.com/luizaconstantin?igsh=MWhpeXd6Z2owbHUxYg%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="stylist-image-container">
-                <div className="stylist-image stylist-3"></div>
-                <div className="instagram-icon"></div>
-              </div>
+              <div className="instagram-icon"></div>
               <div className="stylist-info">
-                <h3>David Glitz</h3>
-                <p>Festival Styling</p>
+                <h3>@luizaconstantin</h3>
               </div>
             </a>
           </div>
 
           <div className="stylist-card">
             <a
-              href="https://www.instagram.com/untold.hairstylist4"
+              href="https://www.instagram.com/roxanaa.08?igsh=MTlvNmxwNTM0cTlpMQ%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="stylist-image-container">
-                <div className="stylist-image stylist-4"></div>
-                <div className="instagram-icon"></div>
-              </div>
+              <div className="instagram-icon"></div>
               <div className="stylist-info">
-                <h3>Elena Crystal</h3>
-                <p>Creative Director</p>
+                <h3>@roxanaa.08</h3>
               </div>
             </a>
           </div>
