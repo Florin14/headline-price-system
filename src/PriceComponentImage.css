@@ -1,4 +1,4 @@
-#root {
+/* #root {
   width: 100%;
   min-height: 100vh;
   margin: 0;
@@ -9,10 +9,9 @@
 .app-container {
   width: 100%;
   min-height: 100vh;
-  /* padding: 20px; */
-  background: linear-gradient(145deg, #2c003e, #5e00a1, #1f0069, #004f9f);;
+  background: linear-gradient(145deg, #2c003e, #5e00a1, #1f0069, #004f9f);
   background-size: 400% 400%;
-  /* animation: gradientShift 20s ease infinite; */
+  animation: gradientShift 20s ease infinite;
   position: relative;
   overflow-y: auto;
   display: flex;
@@ -24,4 +23,4 @@
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
   100% { background-position: 0% 50% }
-}
+} */
