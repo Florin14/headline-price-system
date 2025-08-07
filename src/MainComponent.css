@@ -158,7 +158,8 @@
   margin: 25px 0;
   letter-spacing: 4px;
   text-align: center;
-  font-family: "Righteous", cursive;
+  /* font-family: "Righteous", cursive; */
+  font-family: "Poppins", serif;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0 0 10px rgba(136, 69, 231, 0.7);
