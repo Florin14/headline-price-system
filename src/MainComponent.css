@@ -98,6 +98,7 @@
 .x-symbol {
   font-size: 40px;
   font-weight: 400;
+  margin: 0 10px;
 }
 
 @keyframes pulsate {
@@ -147,13 +148,16 @@
   text-transform: uppercase;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 .studio-academy {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 25px 0;
   letter-spacing: 4px;
   text-align: center;
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Righteous", cursive;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0 0 10px rgba(136, 69, 231, 0.7);
@@ -394,10 +398,10 @@
 
 .service-title {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: center;
   letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Righteous", cursive;
   text-transform: uppercase;
   color: white;
   margin-bottom: 20px;
@@ -428,19 +432,24 @@
   font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 8px;
-  font-family: "Times New Roman", serif;
+  font-family: "Righteous", cursive;
   color: white;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.8px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .service-description {
-  font-size: 0.85rem;
-  opacity: 0.8;
-  margin-bottom: 12px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
 }
 
 .service-duration {
@@ -796,7 +805,7 @@
   }
 
   .service-name {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .price {
