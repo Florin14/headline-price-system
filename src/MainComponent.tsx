@@ -1,5 +1,6 @@
 import React from "react";
 import "./MainComponent.css";
+import StylingInspo from "./StylingInspo";
 
 const MainComponent: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const MainComponent: React.FC = () => {
             <div className="untold-image"></div>
           </div>
         </div>
-        <h2 className="studio-academy">HEADLINE STUDIO ACADEMY</h2>
+        <h2 className="studio-academy">HEADLINE STUDIO & ACADEMY</h2>
 
         <div className="event-badge">
           <div className="badge-content">UNTOLD X 2025 • Cluj-Napoca</div>
@@ -33,7 +34,7 @@ const MainComponent: React.FC = () => {
         <div className="pricing-column">
           <div className="pricing-header">
             <div className="icon-circle">
-              <div className="creative-icon"></div>
+              <div className="hairstyle-icon"></div>
             </div>
             <div className="service-title">SERVICES</div>
           </div>
@@ -108,6 +109,7 @@ const MainComponent: React.FC = () => {
           </div>
         </div>
       </div>
+      <StylingInspo />
 
       <div className="stylists-section">
         <h2 className="stylists-title">OUR FESTIVAL STYLISTS</h2>
@@ -116,8 +118,8 @@ const MainComponent: React.FC = () => {
             <a
               href="https://www.instagram.com/headline.studioacademy?igsh=aHdodGY2ZW9vZmpp"
               target="_blank"
-                          rel="noopener noreferrer"
-                          className="stylist-link"
+              rel="noopener noreferrer"
+              className="stylist-link"
             >
               <div className="instagram-icon"></div>
               <div className="stylist-info">

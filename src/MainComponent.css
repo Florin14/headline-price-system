@@ -291,16 +291,16 @@
 }
 
 .icon-circle {
-  width: 60px;
-  height: 60px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: rgba(221, 57, 136, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  border: 1px solid rgba(221, 57, 136, 0.4);
-  box-shadow: 0 0 15px rgba(221, 57, 136, 0.3);
+  border: 2px solid rgba(221, 57, 136, 0.5);
+  box-shadow: 0 0 20px rgba(221, 57, 136, 0.4);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -315,12 +315,25 @@
   bottom: -10px;
   background: radial-gradient(
     circle,
-    rgba(221, 57, 136, 0.4) 0%,
+    rgba(221, 57, 136, 0.5) 0%,
     transparent 70%
   );
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.8;
   animation: iconGlow 3s infinite alternate;
+}
+
+.icon-circle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.4) 0%,
+    transparent 30%
+  );
+  z-index: 1;
 }
 
 @keyframes iconGlow {
@@ -342,8 +355,33 @@
   background-position: center;
 }
 
+.hairstyle-icon {
+  width: 27px;
+  height: 27px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .scissors-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%237b61ff' d='M8,7A2,2 0 0,1 6,5A2,2 0 0,1 8,3A2,2 0 0,1 10,5A2,2 0 0,1 8,7M8,21A2,2 0 0,1 6,19A2,2 0 0,1 8,17A2,2 0 0,1 10,19A2,2 0 0,1 8,21M18,7C19.1,7 20,6.1 20,5C20,3.9 19.1,3 18,3C16.9,3 16,3.9 16,5C16,6.1 16.9,7 18,7M7.03,13.92L15.5,5.33C15.94,4.88 16.62,4.82 17.11,5.19L20.23,7.31C20.5,7.5 20.65,7.8 20.66,8.11C20.67,8.42 20.53,8.73 20.26,8.94L12.5,14.37C12.5,14.37 9.82,13.41 7.03,13.92M13.34,14.5C13.92,14.64 14.5,14.84 15.03,15.06L20.93,9.96C21.66,9.35 22,8.47 21.93,7.57C21.87,6.67 21.37,5.86 20.57,5.34L17.39,3.17C16.37,2.47 15.05,2.58 14.15,3.44L5.65,12.06C6.37,12.18 7.08,12.36 7.76,12.64C8.76,12.05 9.93,11.75 11.03,11.75C12.11,11.75 13.22,12.05 14.2,12.61L11.18,14.68C11.87,14.56 12.61,14.46 13.34,14.5Z'/%3E%3C/svg%3E");
+}
+
+.hairstyle-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23dd3988' d='M9.88 13.94L12.04 11.79L11.11 10.86L9 12.97C8.46 12.46 7.89 12.03 7.4 11.67C8.37 10.77 9 9.44 9 8C9 5.24 6.76 3 4 3H3V5H4C5.66 5 7 6.34 7 8C7 9.66 5.66 11 4 11H3V13H4C4.95 13 5.81 12.7 6.5 12.21C7.05 12.63 7.67 13.13 8.25 13.71C8.87 14.33 9.38 14.96 9.8 15.53C9.31 16.21 9 17.07 9 18C9 20.76 11.24 23 14 23C16.76 23 19 20.76 19 18C19 15.24 16.76 13 14 13C12.82 13 11.75 13.42 10.93 14.12L9.88 13.94M14 15C15.66 15 17 16.34 17 18C17 19.66 15.66 21 14 21C12.34 21 11 19.66 11 18C11 16.34 12.34 15 14 15M19.5 9C19.5 7.3 18.7 5.8 17.5 4.9L19.13 3.27L17.71 1.86L16.09 3.5C15.2 2.3 13.7 1.5 12 1.5V4.5C13.38 4.5 14.5 5.62 14.5 7V7.5H19.5V9Z'/%3E%3C/svg%3E");
+  animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-2px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
 }
 
 .creative-icon {
@@ -758,7 +796,7 @@
   }
 
   .service-name {
-    font-size:1.1rem;
+    font-size: 1.1rem;
   }
 
   .price {
